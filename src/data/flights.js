@@ -1,0 +1,32 @@
+export const flights = [
+  {
+    id: 1,
+    airline: "Air India",
+    flightNo: "AI-202",
+    from: "Delhi",
+    to: "Mumbai",
+    price: 5200,
+    time: "10:30 AM",
+    seats: 12,
+  },
+  {
+    id: 2,
+    airline: "Indigo",
+    flightNo: "IN-450",
+    from: "Bangalore",
+    to: "Chennai",
+    price: 3200,
+    time: "01:15 PM",
+    seats: 8,
+  },
+  {
+    id: 3,
+    airline: "Vistara",
+    flightNo: "VS-310",
+    from: "Delhi",
+    to: "Pune",
+    price: 6100,
+    time: "06:45 PM",
+    seats: 5,
+  },
+];

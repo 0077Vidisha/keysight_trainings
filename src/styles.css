@@ -1,0 +1,372 @@
+/* ================= GLOBAL ================= */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1f2937;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+}
+
+input,
+select {
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  padding: 0 12px;
+}
+
+
+/* ================= NAVBAR (FIXED PERFECT) ================= */
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 64px;
+
+  background: #0057b8;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 32px;
+
+  box-sizing: border-box; /* ⭐ prevents login clipping */
+  z-index: 1000;
+}
+
+.topbar > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.topbar button {
+  height: 36px;
+  padding: 0 16px;
+  background: white;
+  color: #0057b8;
+  border-radius: 6px;
+}
+
+
+/* ================= DASHBOARD HOME ================= */
+
+.dashboard {
+  padding-top: 110px; /* space for navbar */
+  padding-left: 40px;
+  padding-right: 40px;
+  min-height: 100vh;
+
+  background: linear-gradient(180deg, #0057b8 0%, #eaf2ff 60%);
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+
+/* ================= BOOKING PANEL ================= */
+
+.booking-panel {
+  max-width: 1100px;
+  margin: auto;
+
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+
+/* tabs */
+.booking-tabs {
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #0057b8;
+}
+
+
+/* trip type */
+.trip-types {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* ================= SEARCH ROW (NO OVERLAP FIX) ================= */
+
+.booking-grid {
+  display: flex;        /* ⭐ FLEX instead of grid */
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;      /* ⭐ prevents overlap */
+}
+
+.booking-grid input,
+.booking-grid select,
+.big-search-btn {
+  height: 48px;
+  min-width: 150px;
+}
+
+
+/* bigger fields */
+.booking-grid input:nth-child(1),
+.booking-grid input:nth-child(2) {
+  flex: 2;
+}
+
+.booking-grid input[type="date"] {
+  flex: 1.5;
+}
+
+.booking-grid select {
+  flex: 1.2;
+}
+
+.big-search-btn {
+  flex: 1;
+
+  background: #0057b8;
+  color: white;
+  border-radius: 8px;
+}
+
+
+/* ================= FLIGHTS ================= */
+
+.flights-wrapper {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.flight-card {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+
+  align-items: center;
+
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+
+  margin-bottom: 15px;
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+
+/* ================= PAYMENT ================= */
+
+.payment-wrapper {
+  max-width: 1000px;
+  margin: 50px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.order-summary {
+  background: #0f172a;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.payment-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.pay-btn {
+  width: 100%;
+  height: 48px;
+  margin-top: 20px;
+
+  background: #0057b8;
+  color: white;
+  border-radius: 8px;
+}
+/* Navbar fixes */
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  background: #0057b8;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 40px;
+  color: white;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-btn {
+  background: white;
+  color: #0057b8;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+/* ADMIN */
+
+.admin-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.admin-table {
+  margin-top: 20px;
+}
+
+.admin-row {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr 1fr 1fr;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: white;
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+/* ================= PASSENGER PAGE ================= */
+
+.passenger-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eaf2ff 0%, #ffffff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.passenger-card {
+  width: 420px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.passenger-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Flight summary */
+.flight-summary-box {
+  background: #0057b8;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.flight-summary-box h4 {
+  margin: 0;
+}
+
+/* Form */
+.passenger-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.passenger-form label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.passenger-form input {
+  height: 42px;
+}
+
+/* Big button */
+.big-btn {
+  margin-top: 10px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #0057b8;
+  border-radius: 8px;
+}
+
+.big-btn:hover {
+  background: #003f9e;
+}
